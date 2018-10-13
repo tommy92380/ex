@@ -127,7 +127,28 @@ function init() {
   	
   car = buildVehicle();
   scene.add(car)
-
+	
+  var mat = new THREE.MeshNormalMaterial();
+  var A1= new THREE.Mesh(new THREE.CylinderGeometry(5, 5, 50, 20), mat);
+  scene.add(A1);
+  A1.position.x=100;
+  A1.position.z=100;
+  A1.position.y=25;
+  var A2= new THREE.Mesh(new THREE.CylinderGeometry(5, 5, 50, 20), mat);
+  scene.add(A2);
+  A2.position.x=-100;
+  A2.position.z=-100;
+  A2.position.y=25;
+  var A3= new THREE.Mesh(new THREE.CylinderGeometry(5, 5, 50, 20), mat);
+  scene.add(A3);
+  A3.position.x=100;
+  A3.position.z=-100;
+  A3.position.y=25;
+  var A4= new THREE.Mesh(new THREE.CylinderGeometry(5, 5, 50, 20), mat);
+  scene.add(A4);
+  A4.position.x=-100;
+  A4.position.z=100;
+  A4.position.y=25;
 }
 
 function update(dt) {
